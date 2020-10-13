@@ -1,0 +1,135 @@
+<div class="container">
+  <h2 mat-dialog-title>{{description}}</h2>
+  <mat-dialog-content [formGroup]="formCrearCuenta" (ngSubmit)="crearCuenta()" name="formCrearCuenta" id="formCrearCuenta" autocomplete="off" class="mat-container-update">
+    <!-- <mat-card-content>
+    <mat-form-field class="example-full-width">
+      <input
+        type="text"
+        formControlName="nombre"
+        class="form-control"
+        placeholder="Nombre"
+
+        matInput
+      />
+
+      <mat-error
+        *ngIf="formCrearCuenta.get('nombre').errors?.required"
+        class="invalid-tooltip">
+        Campo obligatorio
+      </mat-error>
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input
+        type="text"
+        formControlName="apellido"
+        class="form-control"
+
+        matInput
+      />
+      <mat-error
+        *ngIf="formCrearCuenta.get('apellido').errors?.required"
+        class="invalid-tooltip"
+      >
+        Campo obligatorio
+      </mat-error>
+
+
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input
+        type="text"
+        formControlName="user"
+        class="form-control"
+
+        matInput
+      />
+      <mat-error
+        *ngIf="formCrearCuenta.get('user').errors?.required"
+        class="invalid-tooltip"
+      >
+        Campo obligatorio
+      </mat-error>
+      <mat-error
+        *ngIf="formCrearCuenta.get('user').errors?.email"
+        class="invalid-tooltip"
+      >
+        email invalido
+      </mat-error>
+
+
+    </mat-form-field>
+  </mat-card-content> -->
+    <!-- <div> -->
+
+
+      <div class="form">
+          <mat-form-field color="accent" appearance="outline">
+              <mat-label>Nombre</mat-label>
+              <input matInput  class="form-control" formControlName="nombre" required>
+              <mat-error
+              *ngIf="formCrearCuenta.get('nombre').errors?.required"
+              class="invalid-tooltip">
+              Campo obligatorio
+            </mat-error>
+          </mat-form-field>
+      </div>
+      <div class="form">
+        <mat-form-field color="accent" appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput  class="form-control" formControlName="apellido" required>
+
+
+            <mat-error
+            *ngIf="formCrearCuenta.get('apellido').errors?.required"
+            class="invalid-tooltip">
+            Campo obligatorio
+          </mat-error>
+        </mat-form-field>
+    </div>
+      <div class="form">
+          <mat-form-field color="accent" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput  class="form-control" formControlName="user" >
+
+              <mat-error
+              *ngIf="formCrearCuenta.get('user').errors?.required"
+              class="invalid-tooltip">
+              Campo obligatorio
+            </mat-error>
+            <mat-error
+            *ngIf="formCrearCuenta.get('user').errors?.email"
+            class="invalid-tooltip">
+            email invalido
+          </mat-error>
+          </mat-form-field>
+      </div>
+      <div class="form">
+        <mat-form-field color="accent" appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput  type="password" class="form-control" formControlName="password" >
+
+            <mat-error
+            *ngIf="formCrearCuenta.get('password').errors?.required"
+            class="invalid-tooltip">
+            Campo obligatorio
+          </mat-error>
+          <mat-error
+          *ngIf="formCrearCuenta.get('password').errors?.minLength"
+          class="invalid-tooltip">
+          minimo 6 caracteres
+        </mat-error>
+        </mat-form-field>
+    </div>
+
+  </mat-dialog-content>
+  <td mat-dialog-actions class="actions-update">
+      <button mat-button mat-dialog-close (click)="cerrar()">Cancelar</button>
+      <button mat-button cdkFocusInitial  [mat-dialog-close]="1" type="submit"(click)="crearCuenta()" [disabled]="formCrearCuenta.invalid">Crear</button>
+  </td>
+</div>
+
+

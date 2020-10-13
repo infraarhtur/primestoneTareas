@@ -1,0 +1,19 @@
+<div class="container">
+ <!-- <mat-card > -->
+  <mat-card-title >{{titulo}}</mat-card-title>
+  <br>
+  <mat-dialog-content>
+
+      <mat-label>
+          ¿Seguro que desea eliminar la tarea:
+          <span>{{this.tareaSeleccionada.titulo}}?</span>
+      </mat-label>
+
+  </mat-dialog-content>
+
+  <mat-dialog-actions >
+      <button mat-button mat-dialog-close>Cerrar</button>
+      <button mat-stroked-button [mat-dialog-close]="1"  color="warn" >Eliminar</button>
+  </mat-dialog-actions>
+<!-- </mat-card> -->
+</div>

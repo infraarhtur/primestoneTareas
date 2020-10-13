@@ -1,0 +1,116 @@
+
+<div class="container">
+  <button mat-mini-fab color="primary" (click)="abrirModalAgregar()"  class="marginleft" aria-label=""  matTooltip="agregar tarea">
+    <mat-icon>add</mat-icon>
+  </button>
+  <br>
+  <h2>To do</h2>
+
+  <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo" name="todo"
+      [cdkDropListConnectedTo]="[doneList,progressList]" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of todo" cdkDrag>
+      <mat-card >
+        <mat-card-header class="mat-card-cvr" >
+
+          <mat-card-title  class="mat-card-cvr" >{{item.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{item.estado}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content >
+          <label for="pDescripcion" style="font-weight: bold;">Descripcion: </label>
+          <br>
+          <p id="pDescripcion" name ="pDescripcion" class="mat-card-cvr">
+            {{item.descripcion}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="mat-card-cvr">
+
+          <button mat-mini-fab color="primary"  class="margenButtons" (click)="abrirModalEditar(item)" matTooltip="Editar tarea">
+            <i class="material-icons">border_color</i>
+          </button>
+
+
+          <button mat-mini-fab color="warn" class="margenButtons" (click)="abrirModalDelete(item)"  matTooltip="Eiliminar tarea">
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <h2>in progress</h2>
+
+  <div cdkDropList  [attr.id]="'divProgress'" #progressList="cdkDropList" [cdkDropListData]="progress"  name="progress"
+      [cdkDropListConnectedTo]="[todoList,doneList]" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of progress" cdkDrag>
+
+      <mat-card >
+        <mat-card-header class="mat-card-cvr" >
+
+          <mat-card-title  class="mat-card-cvr" >{{item.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{item.estado}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content >
+          <label for="pDescripcion" style="font-weight: bold;">Descripcion: </label>
+          <br>
+          <p id="pDescripcion" name ="pDescripcion" class="mat-card-cvr">
+            {{item.descripcion}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="mat-card-cvr">
+
+          <button mat-mini-fab color="primary"  class="margenButtons" (click)="abrirModalEditar(item)" matTooltip="Editar tarea">
+            <i class="material-icons">border_color</i>
+          </button>
+
+
+          <button mat-mini-fab  color="warn" matTooltip="Eliminar tarea"  class="margenButtons" (click)="abrirModalDelete(item)" >
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Done</h2>
+
+  <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done" name="done"
+      [cdkDropListConnectedTo]="[todoList,progressList]" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of done" cdkDrag>
+
+      <mat-card >
+        <mat-card-header class="mat-card-cvr" >
+
+          <mat-card-title  class="mat-card-cvr" >{{item.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{item.estado}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content >
+          <label for="pDescripcion" style="font-weight: bold;">Descripcion: </label>
+          <br>
+          <p id="pDescripcion" name ="pDescripcion" class="mat-card-cvr">
+            {{item.descripcion}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="mat-card-cvr">
+
+          <button mat-mini-fab color="primary"  class="margenButtons" (click)="abrirModalEditar(item)" matTooltip="Editar tarea">
+            <i class="material-icons">border_color</i>
+          </button>
+
+
+          <button mat-mini-fab color="warn" class="margenButtons" (click)="abrirModalDelete(item)" matTooltip="Eliminar tarea" >
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,20 @@
+
+<app-main *ngIf="general" (cierreSesion)="eventoSesion($event)" >
+
+
+    <!-- <app-table></app-table> -->
+    <router-outlet></router-outlet>
+
+</app-main>
+
+
+
+
+
+<app-login *ngIf="login" (eventoSesion)="eventoSesion($event)"><app-login>
+<!-- <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+  <mat-icon>bookmark</mat-icon>
+  </button>
+  <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
+  </button> -->
