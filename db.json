@@ -17,6 +17,15 @@
       "password:": "kld123",
       "role": "Admin",
       "token": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMDYiLCJzdWIiOiJBZG1pbiIsImF1ZCI6IjE3Mi4xNy41Ljk4IiwiaWF0IjoxNTgxMDA3MzI3LCJleHAiOjE1ODEwMDgyMjd9.zez3wI5TLxzqIuoU1SxTiyhOHXwV2-IGFqlAQbO8KpF8lS093v2TrXnV4zD6ziwXtuzw2S7EaeMLc7cZyQLo1A"
+    },
+    {
+      "nombre": "prueba",
+      "apellido": "lg",
+      "user": "prueba@gmail.com",
+      "password:": "kld123",
+      "role": "Admin",
+      "token": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMDYiLCJzdWIiOiJBZG1pbiIsImF1ZCI6IjE3Mi4xNy41Ljk4IiwiaWF0IjoxNTgxMDA3MzI3LCJleHAiOjE1ODEwMDgyMjd9.zez3wI5TLxzqIuoU1SxTiyhOHXwV2-IGFqlAQbO8KpF8lS093v2TrXnV4zD6ziwXtuzw2S7EaeMLc7cZyQLo1A",
+      "id": 5
     }
   ],
   "menuDinamico": [
@@ -29,35 +38,35 @@
   "tareas": [
     {
       "id": 0.8856357624380065,
-      "estado": "done",
+      "estado": "in progress",
       "descripcion": "Take a shower",
       "titulo": "Take a shower",
       "usuario": "infraarhtur@gmail.com"
     },
     {
       "id": 0.5490068359488725,
-      "estado": "in progress",
+      "estado": "to Do",
       "descripcion": "Get up",
       "titulo": "Get up",
       "usuario": "infraarhtur@gmail.com"
     },
     {
       "id": 0.32754060594992596,
-      "estado": "in progress",
+      "estado": "done",
       "descripcion": "Brush teeth esta es una descripcion super editada por 5",
       "titulo": "Brush teeth la tarea 8",
       "usuario": "infraarhtur@gmail.com"
     },
     {
       "id": 0.3924857079605504,
-      "estado": "done",
+      "estado": "to Do",
       "descripcion": "Pick up groceries",
       "titulo": "Pick up groceries",
       "usuario": "infraarhtur@gmail.com"
     },
     {
       "id": 0.8629076497707098,
-      "estado": "to Do",
+      "estado": "done",
       "descripcion": "nueva tarea a ver si por fin ",
       "titulo": "nueva tarea",
       "usuario": "infraarhtur@gmail.com"
@@ -82,6 +91,13 @@
       "descripcion": "sdsdsdd",
       "titulo": "otra",
       "usuario": "sandra@gmail.com"
+    },
+    {
+      "id": 0.9704941141943864,
+      "estado": "in progress",
+      "descripcion": "jajajajajja",
+      "titulo": "prueba",
+      "usuario": "infraarhtur@gmail.com"
     }
   ]
 }
