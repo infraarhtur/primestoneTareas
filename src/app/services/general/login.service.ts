@@ -17,11 +17,12 @@ export class LoginService {
   }
 
   logIn(credencialesUsuario: LoginModel) {
-    var login = {
-      password: credencialesUsuario.user,
-      userName: credencialesUsuario.password,
-    };
-    const url = `${this.urlBase}/login?user=${login.userName}&password=${login.password}`;
+    // var login = {
+    //   password: credencialesUsuario.user,
+    //   userName: credencialesUsuario.password,
+    // };
+    debugger;
+    const url = `${this.urlBase}/login?user=${credencialesUsuario.user}`;
     return this.http.get<LoginModel>(url);
   }
 }

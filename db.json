@@ -17,24 +17,6 @@
       "password:": "kld123",
       "role": "Admin",
       "token": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMDYiLCJzdWIiOiJBZG1pbiIsImF1ZCI6IjE3Mi4xNy41Ljk4IiwiaWF0IjoxNTgxMDA3MzI3LCJleHAiOjE1ODEwMDgyMjd9.zez3wI5TLxzqIuoU1SxTiyhOHXwV2-IGFqlAQbO8KpF8lS093v2TrXnV4zD6ziwXtuzw2S7EaeMLc7cZyQLo1A"
-    },
-    {
-      "id": 0.272094395191977,
-      "nombre": "prueba",
-      "apellido": "prueba",
-      "user": "prueba@prueba.com",
-      "role": "admin",
-      "password:": "kld123",
-      "token": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMDYiLCJzdWIiOiJBZG1pbiIsImF1ZCI6IjE3Mi4xNy41Ljk4IiwiaWF0IjoxNTgxMDA3MzI3LCJleHAiOjE1ODEwMDgyMjd9.zez3wI5TLxzqIuoU1SxTiyhOHXwV2-IGFqlAQbO8KpF8lS093v2TrXnV4zD6ziwXtuzw2S7EaeMLc7cZyQLo1A"
-    },
-    {
-      "id": 0.7393671105116317,
-      "nombre": "otra prueba",
-      "apellido": "pruebita",
-      "user": "pruebita@tt.com",
-      "role": "admin",
-      "password": "kld123",
-      "token": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMDYiLCJzdWIiOiJBZG1pbiIsImF1ZCI6IjE3Mi4xNy41Ljk4IiwiaWF0IjoxNTgxMDA3MzI3LCJleHAiOjE1ODEwMDgyMjd9.zez3wI5TLxzqIuoU1SxTiyhOHXwV2-IGFqlAQbO8KpF8lS093v2TrXnV4zD6ziwXtuzw2S7EaeMLc7cZyQLo1A"
     }
   ],
   "menuDinamico": [
@@ -74,13 +56,6 @@
       "usuario": "infraarhtur@gmail.com"
     },
     {
-      "id": 0.3751095282593777,
-      "estado": "to Do",
-      "descripcion": "Fall asleep esta esta tambien siendo una tarea super editada y eso me encanta por que es genial",
-      "titulo": "Fall asleep jajaja x2",
-      "usuario": "infraarhtur@gmail.com"
-    },
-    {
       "id": 0.8629076497707098,
       "estado": "to Do",
       "descripcion": "nueva tarea a ver si por fin ",
@@ -95,11 +70,18 @@
       "usuario": "infraarhtur@gmail.com"
     },
     {
-      "id": 0.2649878395859091,
+      "id": 0.785623460101196,
+      "estado": "done",
+      "descripcion": "fffff",
+      "titulo": "dfdfff",
+      "usuario": "sandra@gmail.com"
+    },
+    {
+      "id": 0.3783908281452575,
       "estado": "to Do",
-      "descripcion": "tarea de prueba",
-      "titulo": "tarea de prueba",
-      "usuario": "prueba@prueba.com"
+      "descripcion": "sdsdsdd",
+      "titulo": "otra",
+      "usuario": "sandra@gmail.com"
     }
   ]
 }
